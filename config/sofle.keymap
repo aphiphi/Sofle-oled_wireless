@@ -103,11 +103,11 @@
 
         layer_4 {
             bindings = <
-&kp F7    &kp F8    &kp F9              &kp F10        &kp F11        &kp F12                     &trans  &trans  &trans  &trans  &trans  &trans
-&kp BSLH  &kp LBKT  &kp RBKT            &kp LG(LS(S))  &kp TILDE      &trans                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans    &trans              &trans         &kp PAGE_UP    &kp CAPS                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans    &kp LA(LEFT_SHIFT)  &trans         &kp PAGE_DOWN  &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                    &trans              &trans         &trans         &trans    &trans    &trans  &trans  &trans  &trans  &trans
+&kp F7    &kp F8         &kp F9    &kp F10        &kp F11    &kp F12                             &trans  &trans  &trans  &trans  &trans  &trans
+&kp BSLH  &kp LBKT       &kp RBKT  &kp LG(LS(S))  &kp TILDE  &kp LC(NUMBER_1)                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp PAGE_UP    &trans    &trans         &trans     &kp CAPS                            &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp PAGE_DOWN  &trans    &trans         &trans     &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans    &trans         &trans     &trans            &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp GREATER_THAN LESS_THAN>;
@@ -115,24 +115,14 @@
 
         L4 {
             bindings = <
-&trans  &trans      &trans      &trans      &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_PRV  &bt BT_NXT  &bt BT_CLR  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LG(L)   &trans      &trans      &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans      &kp LG(H)   &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                    &trans      &trans      &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans      &trans     &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &bt BT_CLR
+&trans  &bt BT_PRV  &bt BT_NXT  &trans     &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(L)   &trans      &trans     &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans      &kp LG(H)  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                    &trans      &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Bluetooth";
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-            >;
         };
     };
 };
